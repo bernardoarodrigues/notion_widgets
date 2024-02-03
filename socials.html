@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Socials</title>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      display: grid;
+      place-items: center;
+    }
+
+    .wrapper {
+      padding-top: 10px;
+      display: inline-flex;
+
+    }
+
+    .fill {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      color: #fff;
+      outline: 0;
+      cursor: pointer;
+      position: relative;
+      margin: 5px;
+      background-color: #4b4b4b;
+    }
+
+    .icon {
+      font-size: 1em;
+    }
+
+    .email:hover{
+      background-color: #23c8c8;
+    }
+
+    .instagram:hover{
+      background: #f86ee1;
+    }
+
+    .telegram:hover{
+      background-color: #2AABEE;
+    }
+
+    .youtube:hover{
+      background-color: #FF0000;
+    }
+
+    .linkedin:hover{
+      background-color: #0e76a8;
+    }
+
+    .github:hover{
+      background-color: #2b3137;
+    }
+
+    .social {
+      position: relative;
+      margin: 10px;
+      cursor: pointer;
+    }
+
+    .social:hover {
+      color: #fff;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <body>
+
+    <div class="wrapper">
+
+      <div>
+  
+        <!-- Start email Icon -->
+        <div id="email" onclick="navigate(this.id)" class="fill email">
+          <span class="icon email"><i class="fa-solid fa-envelope"></i></span>
+        </div>
+        <!-- End email Icon -->
+  
+        <!-- Start instagram Icon -->
+        <div id="instagram" onclick="navigate(this.id)" class="fill instagram">
+          <span class="icon"><i class="fab fa-instagram"></i></span>
+        </div>
+        <!-- End instagram Icon -->
+        
+        <!-- Start telegram Icon -->
+        <div id="telegram" onclick="navigate(this.id)" class="fill telegram">
+          <span class="icon"><i class="fab fa-telegram"></i></span>
+        </div>
+        <!-- End telegram Icon -->
+  
+      </div>
+  
+      <div>
+  
+        <!-- Start youtube Icon -->
+        <div id="youtube" onclick="navigate(this.id)" class="fill youtube">
+          <span class="icon"><i class="fab fa-youtube"></i></span>
+        </div>
+        <!-- End youtube Icon -->
+  
+        <!-- Start linkedin Icon -->
+        <div id="linkedin" onclick="navigate(this.id)" class="fill linkedin">
+          <span class="icon"><i class="fab fa-linkedin"></i></span>
+        </div>
+        <!-- End linkedin Icon -->
+  
+        <!-- Start github Icon -->
+        <div id="github" onclick="navigate(this.id)" class="fill github">
+          <span class="icon"><i class="fab fa-github"></i></span>
+        </div>
+        <!-- End github Icon -->
+        
+      </div>
+
+    </div>
+
+    <script>
+      function navigate(id) {
+
+        //if you want the URL to open in the same window use '_parent'  instead of '_blank'
+
+        if (id === "email") {
+          window.open("mailto:bernardoarodrigues16@gmail.com", '_parent').focus();
+        }
+        else if (id === "instagram") {
+          window.open("https://instagram.com/bernardoarodriguess", '_parent').focus();
+        }
+        else if (id === "telegram") {
+          window.open("https://web.telegram.org/", '_parent').focus();
+        }
+        else if (id === "youtube") {
+          window.open("https://www.youtube.com/@bernardoarodrigues", '_parent').focus();
+        }
+        else if (id === "linkedin") {
+          window.open("https://www.linkedin.com/in/bernardo-alexandre-043429244/", '_parent').focus(); 
+        }
+        else if (id === "github") {
+          window.open("https://www.github.com/bernardoarodrigues/", '_parent').focus(); 
+        }
+        
+      }
+
+    </script>
+
+  </body>
+
+</html>
