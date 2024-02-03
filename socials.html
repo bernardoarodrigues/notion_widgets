@@ -58,6 +58,10 @@
       background-color: #2AABEE;
     }
 
+    .phone:hover{
+      background-color: #3bb143;
+    }
+
     .youtube:hover{
       background-color: #FF0000;
     }
@@ -107,6 +111,12 @@
       </div>
       <!-- End telegram Icon -->
 
+      <!-- Start phone Icon -->
+      <div id="phone" onclick="navigate(this.id)" class="fill phone">
+        <span class="icon"><i class="fa-solid fa-phone"></i></span>
+      </div>
+      <!-- End phone Icon -->
+
       <!-- Start youtube Icon -->
       <div id="youtube" onclick="navigate(this.id)" class="fill youtube">
         <span class="icon"><i class="fab fa-youtube"></i></span>
@@ -133,22 +143,25 @@
         //if you want the URL to open in the same window use '_parent'  instead of '_blank'
 
         if (id === "email") {
-          window.open("mailto:bernardoarodrigues16@gmail.com", '_parent').focus();
+          window.open("mailto:bernardoarodrigues16@gmail.com", '_blank').focus();
         }
         else if (id === "instagram") {
-          window.open("https://instagram.com/bernardoarodriguess", '_parent').focus();
+          window.open("https://instagram.com/bernardoarodriguess", '_blank').focus();
         }
         else if (id === "telegram") {
-          window.open("https://web.telegram.org/", '_parent').focus();
+          window.open("https://t.me/bernardoarodriguess", '_blank').focus();
+        }
+        else if (id === "phone") {
+          window.open("tel:+5531994923930", '_blank').focus();
         }
         else if (id === "youtube") {
-          window.open("https://www.youtube.com/@bernardoarodrigues", '_parent').focus();
+          window.open("https://www.youtube.com/@bernardoarodrigues", '_blank').focus();
         }
         else if (id === "linkedin") {
-          window.open("https://www.linkedin.com/in/bernardo-alexandre-043429244/", '_parent').focus(); 
+          window.open("https://www.linkedin.com/in/bernardo-alexandre-043429244/", '_blank').focus(); 
         }
         else if (id === "github") {
-          window.open("https://www.github.com/bernardoarodrigues/", '_parent').focus(); 
+          window.open("https://www.github.com/bernardoarodrigues/", '_blank').focus(); 
         }
         
       }
